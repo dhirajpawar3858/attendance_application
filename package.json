@@ -1,0 +1,27 @@
+{
+  "name": "attendance-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline-first Attendance Management Application (local web app)",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,magenta \"npm:dev -w server\" \"npm:dev -w client\"",
+    "seed": "npm run seed -w server",
+    "migrate": "npm run migrate -w server",
+    "test": "npm run test -w server",
+    "build": "npm run build -w client",
+    "start": "npm run build -w client && node server/src/index.ts --prod"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  }
+}

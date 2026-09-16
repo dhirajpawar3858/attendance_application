@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.ts",
+    "start": "node src/index.ts --prod",
+    "migrate": "node src/db/migrate.ts",
+    "seed": "node src/db/seed.ts",
+    "test": "node --test test/*.test.ts",
+    "smoke": "node smoke.mjs"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,143 @@
+/* ==========================================================================
+   Theme system — 5 CONTRASTY light-only palettes.
+   Applied via data-theme on <html>. Deep saturated primaries, crisp borders,
+   vivid-but-readable status colours. No dark mode (light surfaces only).
+   ========================================================================== */
+
+:root {
+  /* shape + motion tokens (shared across themes) */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 1px 2px rgba(30, 25, 50, 0.06), 0 1px 3px rgba(30, 25, 50, 0.05);
+  --shadow: 0 6px 20px rgba(30, 25, 50, 0.10), 0 2px 6px rgba(30, 25, 50, 0.06);
+  --shadow-lg: 0 14px 40px rgba(30, 25, 50, 0.16);
+  --transition: 160ms cubic-bezier(0.4, 0, 0.2, 1);
+  --sidebar-w: 244px;
+  --font: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+
+  /* fallbacks (overridden by theme blocks) */
+  --primary: #5b53e0;
+  --primary-strong: #443bd1;
+  --on-primary: #ffffff;
+}
+
+/* ---------------------------- INDIGO POP (default) ---------------------------- */
+[data-theme='indigo'] {
+  --bg: #eef0fb;
+  --surface: #ffffff;
+  --surface-2: #f0f1fc;
+  --surface-3: #e2e5f9;
+  --border: #d0d3ef;
+  --text: #1e2140;
+  --text-muted: #5b5f85;
+  --primary: #5b53e0;
+  --primary-strong: #443bd1;
+  --primary-soft: #e5e3fb;
+  --on-primary: #ffffff;
+  --accent: #ff7aa8;
+  --success: #1ea672;
+  --success-soft: #d3f2e5;
+  --warning: #e8901b;
+  --warning-soft: #fbe8cf;
+  --danger: #e5484d;
+  --danger-soft: #fbdcdd;
+  --info: #2a97c4;
+  --info-soft: #d5eef7;
+}
+
+/* ---------------------------- TEAL PUNCH ---------------------------- */
+[data-theme='teal'] {
+  --bg: #e9f5f3;
+  --surface: #ffffff;
+  --surface-2: #e6f4f1;
+  --surface-3: #d3ece7;
+  --border: #c2e2dc;
+  --text: #123330;
+  --text-muted: #4a706b;
+  --primary: #129d8e;
+  --primary-strong: #0c8175;
+  --primary-soft: #cdeee9;
+  --on-primary: #ffffff;
+  --accent: #ff6f61;
+  --success: #1ea672;
+  --success-soft: #d1f1e3;
+  --warning: #e0900f;
+  --warning-soft: #f9e7c7;
+  --danger: #e5484d;
+  --danger-soft: #fbdcdd;
+  --info: #2b8fd0;
+  --info-soft: #d5e9f8;
+}
+
+/* ---------------------------- OCEAN CRISP ---------------------------- */
+[data-theme='ocean'] {
+  --bg: #eaf1f9;
+  --surface: #ffffff;
+  --surface-2: #eaf1fb;
+  --surface-3: #d8e6f6;
+  --border: #c6d8ee;
+  --text: #152a44;
+  --text-muted: #516480;
+  --primary: #2f6fed;
+  --primary-strong: #1f57cc;
+  --primary-soft: #dbe7fc;
+  --on-primary: #ffffff;
+  --accent: #12b5c9;
+  --success: #1ea672;
+  --success-soft: #d1f1e3;
+  --warning: #e8901b;
+  --warning-soft: #fbe8cf;
+  --danger: #e5484d;
+  --danger-soft: #fbdcdd;
+  --info: #12b5c9;
+  --info-soft: #d0f0f4;
+}
+
+/* ---------------------------- BERRY BOLD ---------------------------- */
+[data-theme='berry'] {
+  --bg: #fbeef4;
+  --surface: #ffffff;
+  --surface-2: #fcecf3;
+  --surface-3: #f8dbe8;
+  --border: #efc9dc;
+  --text: #3a1730;
+  --text-muted: #7a5069;
+  --primary: #d6337f;
+  --primary-strong: #bb2168;
+  --primary-soft: #fbdcec;
+  --on-primary: #ffffff;
+  --accent: #7b61ff;
+  --success: #1ea672;
+  --success-soft: #d3f2e5;
+  --warning: #e8901b;
+  --warning-soft: #fbe8cf;
+  --danger: #e5484d;
+  --danger-soft: #fbdcdd;
+  --info: #2a97c4;
+  --info-soft: #d5eef7;
+}
+
+/* ---------------------------- FOREST CLEAN ---------------------------- */
+[data-theme='forest'] {
+  --bg: #ebf3ec;
+  --surface: #ffffff;
+  --surface-2: #e9f3ea;
+  --surface-3: #d7ead9;
+  --border: #c4ddc7;
+  --text: #16301f;
+  --text-muted: #4c6b54;
+  --primary: #2e8b57;
+  --primary-strong: #227044;
+  --primary-soft: #d5eddd;
+  --on-primary: #ffffff;
+  --accent: #e0a020;
+  --success: #1ea672;
+  --success-soft: #d1f1e3;
+  --warning: #e0900f;
+  --warning-soft: #f9e7c7;
+  --danger: #e5484d;
+  --danger-soft: #fbdcdd;
+  --info: #2b8fd0;
+  --info-soft: #d5e9f8;
+}
