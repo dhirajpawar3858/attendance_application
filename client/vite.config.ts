@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 // Dev server proxies /api to the Express server on :3001.
 export default defineConfig({
-  base :'/attendance_application/',
+  // base :'/attendance_application/',
   plugins: [react()],
   server: {
     port: 5173,
